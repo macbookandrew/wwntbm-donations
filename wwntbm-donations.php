@@ -3,7 +3,7 @@
  * Plugin Name: WWNTBM Donations
  * Plugin URI: https://github.com/macbookandrew/wwntbm-donations
  * Description: WWNTBM Tithe.ly integration
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: AndrewRMinion Design
  * Author URI: https://andrewrminion.com
  */
@@ -11,6 +11,8 @@
 if (!defined('ABSPATH')) {
     exit;
 }
+
+const WWNTBM_DONATIONS_VERSION = '1.0.1';
 
 global $give_URL;
 $give_URL = 'https://tithe.ly/give_new/www/#/tithely/give-one-time/17262';
@@ -22,7 +24,7 @@ function wwntbm_load_chosen() {
     wp_register_style( 'chosen', plugins_url( 'assets/css/chosen.min.css', __FILE__ ), array(), '1.6.2', 'screen' );
     wp_register_script( 'chosen', plugins_url( 'assets/js/chosen.jquery.min.js', __FILE__ ), array( 'jquery' ), '1.6.2', true );
 
-    wp_register_script( 'wwntbm-donations', plugins_url( 'assets/js/wwntbm-donations.js', __FILE__ ), array( 'jquery', 'chosen' ), '1.0.0', true );
+    wp_register_script( 'wwntbm-donations', plugins_url( 'assets/js/wwntbm-donations.js', __FILE__ ), array( 'jquery', 'chosen' ), WWNTBM_DONATIONS_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'wwntbm_load_chosen' );
 
