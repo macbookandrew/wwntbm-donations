@@ -61,7 +61,7 @@ function wwntbm_tithely_donations_list( $attributes ) {
         }
 
         $shortcode_content .= '</select>
-        <button type="submit" class="tithely-give-btn">Donate</button>
+        <input type="submit" class="tithely-give-btn" value="Donate" />
         </form>';
     }
 
