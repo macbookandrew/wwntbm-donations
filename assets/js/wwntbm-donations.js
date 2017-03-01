@@ -5,7 +5,8 @@
         $('form.donations').on('submit', function(e) {
             e.preventDefault();
 
-            var missionaryName = $('select[name="giving_to"]').val();
+            var giveUrl = $(this).attr('action'),
+                missionaryName = $('select[name="giving_to"]').val();
 
             window.location.href = giveUrl+'?giving_to='+missionaryName;
         });

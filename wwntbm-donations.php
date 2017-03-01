@@ -40,7 +40,6 @@ function wwntbm_tithely_donations_list( $attributes ) {
     wp_enqueue_style( 'chosen' );
     wp_enqueue_script( 'chosen' );
     wp_enqueue_script( 'wwntbm-donations' );
-    wp_add_inline_script( 'wwntbm-donations', 'var giveUrl = ' . $give_URL );
 
     $missionary_args = array(
         'post_type'     => 'wwntbm_missionaries',
