@@ -3,7 +3,7 @@
  * Plugin Name: WWNTBM Donations
  * Plugin URI: https://github.com/macbookandrew/wwntbm-donations
  * Description: WWNTBM Tithe.ly integration
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: AndrewRMinion Design
  * Author URI: https://andrewrminion.com
  */
@@ -63,7 +63,7 @@ function wwntbm_tithely_donations_list( $attributes ) {
         }
 
         $shortcode_content .= '</select>
-        <input type="submit" class="tithely-give-btn" value="Donate" />
+        <input type="submit" class="tithely-give-btn" value="Give" />
         </form>';
     }
 
@@ -88,7 +88,7 @@ function wwntbm_custom_donation_button( $attributes ) {
     wp_enqueue_style( 'chosen' );
     wp_enqueue_script( 'chosen' );
 
-    $shortcode_content .= '<a href="' . $give_URL . '?giving_to=' . urlencode( $shortcode_attributes['giving_to'] ) . '" class="tithely-give-btn">Donate to ' . $shortcode_attributes['giving_to'] . '</a>';
+    $shortcode_content .= '<a href="' . $give_URL . '?giving_to=' . urlencode( $shortcode_attributes['giving_to'] ) . '" class="tithely-give-btn">Give to ' . $shortcode_attributes['giving_to'] . '</a>';
 
     return $shortcode_content;
 }

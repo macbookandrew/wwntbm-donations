@@ -12,6 +12,9 @@ Each missionary will have the equivalent of a `[donation_button]` added at the b
 
 # Changelog
 
+## 1.0.2
+- Update give button wording
+
 ## 1.0.1
 - Fix giveUrl variable
 - Use old-style <input type="submit" /> instead of HTML5 button
