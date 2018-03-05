@@ -55,7 +55,8 @@ function wwntbm_tithely_donations_list( $attributes ) {
     if ( $missionary_query->have_posts() ) {
         $shortcode_content .= '<form class="donations" method="get" action="https://tithe.ly/give_new/www/#/tithely/give-one-time/17262">
         <select name="giving_to">
-        <option value="General%20Office%20Fund">General Office Fund</option>';
+        <option value="General%20Office%20Fund">General Office Fund</option>
+        <option value="Europe%20Conference">Europe Conference</option>';
 
         while ( $missionary_query->have_posts() ) {
             $missionary_query->the_post();
