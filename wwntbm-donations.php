@@ -109,7 +109,12 @@ add_shortcode( 'donation_button', 'wwntbm_custom_donation_button' );
  */
 function wwntbm_missionary_donation_button( $content ) {
 	if ( get_post_type() === 'wwntbm_missionaries' ) {
-		$content .= do_shortcode( '<p>[donation_button]</p>' );
+		$custom_tithely = get_field( 'custom_tithely' );
+		if ( ! empty( $custom_tithely ) ) {
+			$content .= wp_kses_post( do_shortcode( $custom_tithely ) );
+		} else {
+			$content .= do_shortcode( '<p>[donation_button]</p>' );
+		}
 	}
 	return $content;
 }
