@@ -84,7 +84,7 @@
             "label": "Custom Tithely Button",
             "name": "custom_tithely",
             "type": "wysiwyg",
-            "instructions": "",
+            "instructions": "<strong>Replaces<\/strong> the auto-generated button.\r\n\r\nSample: <code>[donation_button giving_to=\"Missionary Name\"] [donation_button giving_to=\"Special Project\"]<\/code>",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -116,5 +116,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1525877869
+    "modified": 1525897210
 }
