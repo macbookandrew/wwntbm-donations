@@ -12,6 +12,9 @@ Each missionary will have the equivalent of a `[donation_button]` added at the b
 
 # Changelog
 
+## 1.1.0
+- Add support for `custom_tithely` ACF field
+
 ## 1.0.2
 - Update give button wording
 

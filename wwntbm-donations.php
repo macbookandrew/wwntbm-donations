@@ -3,7 +3,7 @@
  * Plugin Name: WWNTBM Donations
  * Plugin URI: https://github.com/macbookandrew/wwntbm-donations
  * Description: WWNTBM Tithe.ly integration
- * Version: 1.0.2
+ * Version: 1.1.0
  * Author: AndrewRMinion Design
  * Author URI: https://andrewrminion.com
  *
@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-const WWNTBM_DONATIONS_VERSION = '1.0.1';
+const WWNTBM_DONATIONS_VERSION = '1.1.0';
 
 global $give_url;
 $give_url = 'https://tithe.ly/give_new/www/#/tithely/give-one-time/17262';
