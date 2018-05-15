@@ -22,26 +22,6 @@
             "maxlength": ""
         },
         {
-            "key": "field_56f99404cac9e",
-            "label": "WP Username",
-            "name": "username",
-            "type": "user",
-            "instructions": "Associated WordPress user—only if this missionary will write guest posts",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "role": [
-                "missionary"
-            ],
-            "allow_null": 1,
-            "multiple": 0,
-            "return_format": "array"
-        },
-        {
             "key": "field_56faa651fe68e",
             "label": "Staff Title",
             "name": "staff_title",
@@ -50,7 +30,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -58,7 +38,44 @@
             "placeholder": "President",
             "prepend": "",
             "append": "",
-            "formatting": "html",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5afadc379b2ca",
+            "label": "Field",
+            "name": "missionary_field",
+            "type": "text",
+            "instructions": "Large region (Africa, Micronesia, United States, etc.)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5afadc4b9b2cb",
+            "label": "Field Region",
+            "name": "missionary_field_region",
+            "type": "text",
+            "instructions": "Country\/state within large region (Nigeria, Pohnpei, North Carolina, etc.)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
             "maxlength": ""
         },
         {
@@ -97,6 +114,26 @@
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
+        },
+        {
+            "key": "field_56f99404cac9e",
+            "label": "WP Username",
+            "name": "username",
+            "type": "user",
+            "instructions": "Associated WordPress user—only if this missionary will write guest posts",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "role": [
+                "missionary"
+            ],
+            "allow_null": 1,
+            "multiple": 0,
+            "return_format": "array"
         }
     ],
     "location": [
@@ -116,5 +153,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1525897210
+    "modified": 1526389888
 }
