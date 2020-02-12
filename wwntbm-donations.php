@@ -97,6 +97,8 @@ function wwntbm_custom_donation_button( $attributes ) {
 
 	$shortcode_content .= '<a href="' . esc_url( $give_url . '?giving_to=' . rawurlencode( $shortcode_attributes['giving_to'] ) ) . '" class="tithely-give-btn">Give to ' . esc_attr( $shortcode_attributes['giving_to'] ) . '</a>';
 
+	$shortcode_content .= '<p class="donation-meta">Please note that our credit card processing company does take a small fee out of each donation, and your tax-deductible receipt will show a slightly lower amount than the one given. You may choose to cover that fee (above your donation amount) by selecting the prompt on the following screen. For alternative giving options, please see <a href="' . esc_url( home_url( 'give' ) ) . '">wwntbm.com/give</a>.</p>';
+
 	return $shortcode_content;
 }
 add_shortcode( 'donation_button', 'wwntbm_custom_donation_button' );
