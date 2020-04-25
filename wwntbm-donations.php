@@ -63,7 +63,7 @@ function wwntbm_tithely_donations_list( $attributes ) {
 
 		while ( $missionary_query->have_posts() ) {
 			$missionary_query->the_post();
-			$shortcode_content .= '<option value="' . esc_url( rawurlencode( get_the_title() ) ) . '">' . esc_attr( get_the_title() ) . '</option>';
+			$shortcode_content .= '<option value="' . rawurlencode( get_the_title() ) . '">' . esc_attr( get_the_title() ) . '</option>';
 		}
 
 		$shortcode_content .= '</select>
