@@ -58,12 +58,12 @@ function wwntbm_tithely_donations_list( $attributes ) {
 	if ( $missionary_query->have_posts() ) {
 		$shortcode_content .= '<form class="donations" method="get" action="https://tithe.ly/give_new/www/#/tithely/give-one-time/17262">
 		<select name="giving_to">
-		<option value="General%20Office%20Fund">General Office Fund</option>
-		<option value="Europe%20Conference">Encouragement Conference</option>';
+		<option value="General Office Fund">General Office Fund</option>
+		<option value="Europe Conference">Encouragement Conference</option>';
 
 		while ( $missionary_query->have_posts() ) {
 			$missionary_query->the_post();
-			$shortcode_content .= '<option value="' . rawurlencode( get_the_title() ) . '">' . esc_attr( get_the_title() ) . '</option>';
+			$shortcode_content .= '<option value="' . get_the_title() . '">' . esc_attr( get_the_title() ) . '</option>';
 		}
 
 		$shortcode_content .= '</select>
